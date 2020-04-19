@@ -1,0 +1,46 @@
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\bin\Debug\netcoreapp3.1\GLR.Core.exe
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\bin\Debug\netcoreapp3.1\GLR.Core.deps.json
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\bin\Debug\netcoreapp3.1\GLR.Core.runtimeconfig.json
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\bin\Debug\netcoreapp3.1\GLR.Core.runtimeconfig.dev.json
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\bin\Debug\netcoreapp3.1\GLR.Core.dll
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\bin\Debug\netcoreapp3.1\GLR.Core.pdb
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\bin\Debug\netcoreapp3.1\Discord.Net.Commands.dll
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\bin\Debug\netcoreapp3.1\Discord.Net.Core.dll
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\bin\Debug\netcoreapp3.1\Discord.Net.Rest.dll
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\bin\Debug\netcoreapp3.1\Discord.Net.Webhook.dll
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\bin\Debug\netcoreapp3.1\Discord.Net.WebSocket.dll
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\bin\Debug\netcoreapp3.1\System.Interactive.Async.dll
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.csprojAssemblyReference.cache
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.csproj.CoreCompileInputs.cache
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.AssemblyInfoInputs.cache
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.AssemblyInfo.cs
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.csproj.CopyComplete
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.dll
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.pdb
+C:\Users\landr\Desktop\Profile Bot\Code source\GLR-bot-master\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.genruntimeconfig.cache
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\bin\Debug\netcoreapp3.1\GLR.Core.exe
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\bin\Debug\netcoreapp3.1\GLR.Core.deps.json
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\bin\Debug\netcoreapp3.1\GLR.Core.runtimeconfig.json
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\bin\Debug\netcoreapp3.1\GLR.Core.runtimeconfig.dev.json
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\bin\Debug\netcoreapp3.1\GLR.Core.dll
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\bin\Debug\netcoreapp3.1\GLR.Core.pdb
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\bin\Debug\netcoreapp3.1\Discord.Net.Commands.dll
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\bin\Debug\netcoreapp3.1\Discord.Net.Core.dll
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\bin\Debug\netcoreapp3.1\Discord.Net.Rest.dll
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\bin\Debug\netcoreapp3.1\Discord.Net.Webhook.dll
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\bin\Debug\netcoreapp3.1\Discord.Net.WebSocket.dll
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\bin\Debug\netcoreapp3.1\System.Interactive.Async.dll
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.csprojAssemblyReference.cache
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.csproj.CoreCompileInputs.cache
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.AssemblyInfoInputs.cache
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.AssemblyInfo.cs
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.csproj.CopyComplete
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.dll
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.pdb
+C:\Users\landr\Desktop\Profile Bot\code\src\GLR.Core\obj\Debug\netcoreapp3.1\GLR.Core.genruntimeconfig.cache
