@@ -39,20 +39,29 @@ namespace GLR.Core.Services
                 profile.UserName = actualUsername;
             }
 
-            profile.Url = $"https://www.galaxylifereborn.com/profile/{profile.UserName}";
+            profile.Url = $"https://www.galaxylifereborn.com/profile/{profile.UserName.Replace(" ", "%20")}";
             profile.ImageUrl = $"https://galaxylifereborn.com/uploads/avatars/{profile.Id}.png?t={currentUnixTime}";
 
             var result = await webclient.GetAsync($"https://galaxylifereborn.com/api/userinfo?u={profile.Id}&t=c");
-            var stringDate =  await result.Content.ReadAsStringAsync();
+            var stringDate = await result.Content.ReadAsStringAsync();
 
             profile.CreationDate = DateTime.Parse(stringDate);
             profile.AmountOfFriends = await GetAmountOfFriends(profile.Id);
             profile.AmountOfIncomingRequests = await GetAmountOfIncomingRequests(profile.Id);
             profile.AmountOfOutgoingRequests = await GetAmountOfOutgoingRequests(profile.Id);
 
+            result = await webclient.GetAsync($"https://galaxylifereborn.com/api/userinfo?u={profile.Id}&t=t");
+            var stringRank = await result.Content.ReadAsStringAsync();
+            var success = Enum.TryParse(stringRank, out Rank rank);
+
+            profile.RankInfo = new RankInfo()
+            {
+                Rank = rank
+            };
+
             return profile;
         }
-        
+
         private async Task<int> GetAmountOfFriends(ulong id)
         {
             var webclient = new HttpClient();
@@ -61,10 +70,9 @@ namespace GLR.Core.Services
 
             var friendIds = friendsAsString.Split(", ");
             if (friendIds[0] == "") friendIds = null;
-            return friendIds is null ?  0 : friendIds.Length;
+            return friendIds is null ? 0 : friendIds.Length;
 
             /*var friends = await GetFriends(id);
-
             if (friends is null) return 0;
             return friends.Count;*/
         }
@@ -77,7 +85,7 @@ namespace GLR.Core.Services
 
             var userIds = requestsAsString.Split(", ");
             if (userIds[0] == "") userIds = null;
-            return userIds is null ?  0 : userIds.Length;
+            return userIds is null ? 0 : userIds.Length;
         }
 
         private async Task<int> GetAmountOfOutgoingRequests(ulong id)
@@ -88,7 +96,7 @@ namespace GLR.Core.Services
 
             var userIds = requestsAsString.Split(", ");
             if (userIds[0] == "") userIds = null;
-            return userIds is null ?  0 : userIds.Length;
+            return userIds is null ? 0 : userIds.Length;
         }
 
         public async Task<List<Profile>> GetFriends(ulong id)

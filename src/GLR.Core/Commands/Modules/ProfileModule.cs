@@ -16,10 +16,12 @@ namespace GLR.Core.Commands.Modules
         }
 
         [Command("profil", RunMode = RunMode.Async)]
-        public async Task ShowProfile([Remainder]string userName)
+        public async Task ShowProfile([Remainder]string userName = "")
         {
+            if (string.IsNullOrEmpty(userName)) userName = Context.User.Username;
+
             var profile = await _profileService.GetProfileAsync(userName);
-            if (profile == null) 
+            if (profile == null)
             {
                 await ReplyAsync("Profil non trouvé."); return;
             }
@@ -28,36 +30,13 @@ namespace GLR.Core.Commands.Modules
                 .WithTitle($"Profil de jeu pour {profile.UserName}")
                 .WithUrl(profile.Url)
                 .WithThumbnailUrl(profile.ImageUrl)
-                .WithDescription($"\nL'ID de l'utilisateur est **{profile.Id}**.")
+                .WithDescription($"\nL'ID de l'utilisateur est **{profile.Id}**." +
+                                $"\n**{profile.UserName}** est **{profile.RankInfo.Rank}**.")
                 .AddField("Friends", $"Il a **{profile.AmountOfFriends}** amis." +
                     $"\nIl a **{profile.AmountOfIncomingRequests}** demandes d'amis en attente." +
                     $"\nIl a envoyé **{profile.AmountOfOutgoingRequests}** demandes d'amis en attente.")
                 .WithFooter($"Il a créer son compte le {profile.CreationDate.ToLongDateString()}")
-                .Build();
-
-            await ReplyAsync("", false, embed);
-        }
-
-        [Command("profile", RunMode = RunMode.Async)]
-        public async Task ShowProfile()
-        {
-            var name = Context.User.Username;
-
-            var profile = await _profileService.GetProfileAsync(name);
-            if (profile == null) 
-            {
-                await ReplyAsync("Profil non trouvé."); return;
-            }
-
-            var embed = new EmbedBuilder()
-                .WithTitle($"Profil de jeu pour {profile.UserName}")
-                .WithUrl(profile.Url)
-                .WithThumbnailUrl(profile.ImageUrl)
-                .WithDescription($"\nL'ID de l'utilisateur est **{profile.Id}**.")
-                .AddField("Friends", $"Il a **{profile.AmountOfFriends}** amis." +
-                    $"\nIl a **{profile.AmountOfIncomingRequests}** demandes d'amis en attente." +
-                    $"\nIl a envoyé **{profile.AmountOfOutgoingRequests}** demandes d'amis en attente.")
-                .WithFooter($"Il a créer son compte le {profile.CreationDate.ToLongDateString()}")
+                .WithColor(profile.RankInfo.ColourValue)
                 .Build();
 
             await ReplyAsync("", false, embed);
